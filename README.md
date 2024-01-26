@@ -1,20 +1,18 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/XpZX1row)
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-8d59dc4de5201274e310e4c54b9627a8934c3b88527886e3b421487c677d23eb.svg)](https://classroom.github.com/a/XpZX1row)
-<br>
 
 # Data Structures & OOP - Project
 
 ### Startup program: ./src/main/java/com/prog2/main/Main.java
 
 ### User: jiucheng Password: 123
-<br>
 
 ### Test Database: In the "Main.java", "fileWrite()" method can generate a sample Database used for test. 
-#
+
 
 This template repository is the starter project for Programming 2 Project. Written in Java, and tested with Gradle/JUnit.
 
 ### Project Description
+
+![Example Demo](https://raw.githubusercontent.com/zangjiucheng/RemuNex-EmpowerPay/main/image.png)
 
 **Instructions**
 
