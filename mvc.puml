@@ -1,0 +1,31 @@
+@startuml
+
+:User:
+:AdmitUser:
+
+"Login GUi" as (loginFrame)
+"GUI" as (gui)
+"Process" as (process)
+"Data" as (data)
+
+:User: --> (loginFrame)
+(loginFrame) --> (AdmitUser) : "Login"
+:AdmitUser: --> (gui) : "Display Main Panel (Use)"
+(process) --> :AdmitUser: : "Display Data"
+(gui) --> (process) : "Call Backend (Process Data)"
+(process) --> data : "Write Data"
+data --> (process) : "Read Data"
+
+note left of data
+   Under the folder of "Data"
+   File name: "*.ser"
+end note
+
+note right of loginFrame
+Using for check User Access
+end note
+
+note left of process
+Serialization Object
+end note
+@enduml

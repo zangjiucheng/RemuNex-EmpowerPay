@@ -1,0 +1,21 @@
+@override
+calculateSalary(char degree){ 
+    double salary;
+    double degreeRate;
+    switch degree {
+        case 'B':
+            degreeRate = 42;
+            break
+        case 'M': 
+            degreeRate = 82;
+            break
+        case 'D':
+            degreeRate = 112;
+            break
+        default:
+            throw new Error('Invalid degree rate');
+    } 
+    salary = 32 * degreeRate * 2 * 0.85; 
+    salary = Math.ceil(salary * 100) / 100;
+    return salary;
+}

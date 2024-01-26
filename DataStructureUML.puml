@@ -1,0 +1,158 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+
+interface ComputePayRoll {
+    + calculateSalary() : double
+}
+
+interface IdString{
+    + prngId() : String
+}
+
+abstract class Person {
+    # id : int
+    {static} # n : int
+    # random : Random
+    # name : String
+    # indentity : boolean
+    # phone : String
+    # email : String
+    # gender : char 
+    ' <<abstract>> + choiceWork() : Person
+}
+
+class Staff{
+    - workload : int
+    - salary : double
+    - duty : String
+    - depaerment : String
+    + calculateSalary() : double
+    + prngId() : String
+}
+
+class Teacher{
+    # specialty : String
+    # salary : double
+    # yearsOfExperience : int
+    # degree : char
+    # depaerment : String
+    ' # dean : Dean
+    + calculateSalary() : double
+    ' + setDeanStatus() : void
+    + prngId() : String
+}
+
+class PartTimeTeacher{
+    - hoursWorked : int
+    + calculateSalary() : double
+    + prngId() : String
+}
+
+class Dean{
+    - teacher : Teacher
+}
+
+class Department{
+    - id : int
+    {static} - n : int
+    # random : Random
+    - name : String
+    - teacherList : ArrayList<Teacher>
+    - staffList : ArrayList<Staff>
+    - dean : Dean
+    + prngId() : String
+}
+
+
+' class GUI{
+'     + show() : void
+'     ' + showStaff() : void
+'     ' + showTeacher() : void
+'     ' + showFullTimeTeacher() : void
+'     ' + showDepartment() : void
+' }
+
+' class Main{
+'     + main() : void
+' }
+
+class Database{
+    - fileDir : String
+    + ArrayList<Department> : departmentList
+}
+
+class IOConnect{
+    + connect() : Database
+    + save() : void
+    + update() : Database
+    + delete() : void
+}
+
+' class ReadFile{
+'     + read() : void
+' }
+
+' class UserLogin{
+'     - accountNumber : int
+'     - password : String
+' }
+
+class SerializationData{
+    {static} + serialization() : void
+    {static} + deserialization() : Object
+}
+
+' GUI .. Department
+' GUI .. Main
+' Database .. Main
+' Person .. ReadFile
+' Database .. ReadFile
+' UserLogin --|> Main
+' Main ..GUI 
+' Main .. Database
+' Main .. ReadFile
+
+' Person <|-- Main
+' Teacher <|-- fullTimeTeacher : extends
+Person <|-- Staff : extends
+Person <|-- Teacher : extends
+Teacher <|-- PartTimeTeacher : extends
+Department "1" *-- Dean : contain
+Dean .. Teacher : contain
+
+ComputePayRoll <|.. Teacher : implements
+ComputePayRoll <|.. Staff : implements
+ComputePayRoll <|.. PartTimeTeacher : implements
+
+IdString <|.. Person : implements
+IdString <|.. Department : implements
+
+Department "1" *-- "many" Teacher : contains
+Department "1" *-- "many" Staff : contains
+
+' Department .. SerializationData 
+Department "many" --o "1" Database
+SerializationData .. IOConnect : use
+IOConnect .. Database : use
+
+' note right of user::accountNumber
+'    DefaultValue:
+'    accountNumber = 0
+'    name = ""
+'    amount = 0
+'    numberOfAccounts = 0
+' end note
+
+' note right of user::calculateInterest()
+'    Interest: 2%
+' end note
+
+' note right of user::toString()
+'    Format:
+'    Account Number: 1234
+'    Name: John Doe
+'    Amount: 1000.00
+' end note
+
+@enduml

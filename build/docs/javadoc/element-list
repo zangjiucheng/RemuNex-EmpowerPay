@@ -1,0 +1,5 @@
+com.prog2.main
+com.prog2.main.GUI
+com.prog2.main.Process
+com.prog2.main.Process.Comparator
+com.prog2.main.Process.Sorting

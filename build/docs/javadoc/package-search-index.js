@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.prog2.main"},{"l":"com.prog2.main.GUI"},{"l":"com.prog2.main.Process"},{"l":"com.prog2.main.Process.Comparator"},{"l":"com.prog2.main.Process.Sorting"}];updateSearchResults();

@@ -1,0 +1,6 @@
+@override
+calculateSalary(int workLoad){ 
+    double salary;
+    salary = workLoad * 32 * 2 * 0.76; 
+    return salary;
+}

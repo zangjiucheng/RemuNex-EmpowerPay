@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.prog2.main.SalaryCalculateTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2024-01-26T18:57:01" hostname="v1040-wn-rt-a-11-53.campus-dynamic.uwaterloo.ca" time="0.095">
+  <properties/>
+  <testcase name="PartTimeTeacherSalaryCalculateTest1()" classname="com.prog2.main.SalaryCalculateTest" time="0.042"/>
+  <testcase name="PartTimeTeacherSalaryCalculateTest2()" classname="com.prog2.main.SalaryCalculateTest" time="0.002"/>
+  <testcase name="PartTimeTeacherSalaryCalculateTest3()" classname="com.prog2.main.SalaryCalculateTest" time="0.004"/>
+  <testcase name="PartTimeTeacherSalaryCalculateTest4()" classname="com.prog2.main.SalaryCalculateTest" time="0.002"/>
+  <testcase name="PartTimeTeacherSalaryCalculateTest5()" classname="com.prog2.main.SalaryCalculateTest" time="0.003"/>
+  <testcase name="StaffSalaryCalculateTest1()" classname="com.prog2.main.SalaryCalculateTest" time="0.003"/>
+  <testcase name="StaffSalaryCalculateTest2()" classname="com.prog2.main.SalaryCalculateTest" time="0.001"/>
+  <testcase name="StaffSalaryCalculateTest3()" classname="com.prog2.main.SalaryCalculateTest" time="0.003"/>
+  <testcase name="StaffSalaryCalculateTest4()" classname="com.prog2.main.SalaryCalculateTest" time="0.001"/>
+  <testcase name="StaffSalaryCalculateTest5()" classname="com.prog2.main.SalaryCalculateTest" time="0.002"/>
+  <testcase name="FullTimeTeacherSalaryCalculateTest1()" classname="com.prog2.main.SalaryCalculateTest" time="0.001"/>
+  <testcase name="FullTimeTeacherSalaryCalculateTest2()" classname="com.prog2.main.SalaryCalculateTest" time="0.005"/>
+  <testcase name="FullTimeTeacherSalaryCalculateTest3()" classname="com.prog2.main.SalaryCalculateTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
