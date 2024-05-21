@@ -12,7 +12,8 @@ This template repository is the starter project for Programming 2 Project. Writt
 
 ### Project Description
 
-![Example Demo](https://raw.githubusercontent.com/zangjiucheng/RemuNex-EmpowerPay/main/image.png)
+![Example Demo](RemuNex-EmpowerPay/main/image.png)
+![UML](UML/DataStructureUML/DataStructureUML.png)
 
 **Instructions**
 
