@@ -12,7 +12,7 @@ This template repository is the starter project for Programming 2 Project. Writt
 
 ### Project Description
 
-![Example Demo](RemuNex-EmpowerPay/main/image.png)
+![Example Demo](image.png)
 ![UML](UML/DataStructureUML/DataStructureUML.png)
 
 **Instructions**
